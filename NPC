@@ -1,0 +1,30 @@
+class NPC:
+    def __init__(self):
+        self.force = 1
+        self.agilité = 1
+        self.constitution = 1
+        self.intelligence = 1
+        self.sagesse = 1
+        self.charisme = 1
+        self.classe_darmure = random.randint(1,12)
+        self.nom = ''
+        self.race = ''
+        self.espece = ''
+        self.vie = 20
+        self.profession = ''
+    def affichagedecaractéristique(self):
+        print(self.nom)
+        print(self.race)
+        print(self.espece)
+        print(self.vie)
+        print(self.profession)
+        print(self.force)
+        print(self.agilité)
+        print(self.constitution)
+        print(self.intelligence)
+        print(self.sagesse)
+        print(self.charisme)
+        print(self.classe_darmure)
+class kobold:
+
+
