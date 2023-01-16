@@ -1,3 +1,19 @@
+import random
+
+
+def dés:
+    dice1 = random.randint(1,6)
+    dice2 = random.randint(1,6)
+    dice3 = random.randint(1,6)
+    dice4 = random.randint(1, 6)
+    if dice1 < dice2, dice3, dice4:
+        dice2 + dice3 + dice4
+        
+    
+    
+
+
+
 class NPC:
     def __init__(self):
         self.force = 1
@@ -12,6 +28,7 @@ class NPC:
         self.espece = ''
         self.vie = 20
         self.profession = ''
+
     def affichagedecaractéristique(self):
         print(self.nom)
         print(self.race)
@@ -25,6 +42,20 @@ class NPC:
         print(self.sagesse)
         print(self.charisme)
         print(self.classe_darmure)
-class kobold:
+
+
+
+class kobold(NPC):
+    def __init__(self, profession):
+        super().__init__(profession)
+    def attack(self,cible):
+        return
+    def subir_des_dommages(self):
+        self.vie -= random.randint(1,6)
+class Héros(NPC):
+    def __init__(self, cible):
+        return
+    def subir_des_dommages(self):
+
 
 
