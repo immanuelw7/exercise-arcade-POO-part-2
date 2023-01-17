@@ -1,4 +1,13 @@
 import random
+def dés(num_dés):
+    roulade_dés = [random.randint(1, 6) for i in range(num_dés)]
+    roulade_dés.sort(reverse=True)
+    return roulade_dés[:3]
+
+trois_dés = dés(4)
+print(trois_dés)
+
+"""import random
 
 
 def dés:
@@ -8,6 +17,7 @@ def dés:
     dice4 = random.randint(1, 6)
     if dice1 < dice2, dice3, dice4:
         dice2 + dice3 + dice4
+        return  """
         
     
     
@@ -55,7 +65,8 @@ class kobold(NPC):
 class Héros(NPC):
     def __init__(self, cible):
         return
-    def subir_des_dommages(self):
+    def subir_des_dommages(self):"""
+
 
 
 
