@@ -3,8 +3,8 @@ import random
 def dés():
     roulade_dés = [random.randint(1, 6) for i in range(4)]
     roulade_dés.sort(reverse=True)
-    return roulade_dés[:3]
-trois_dés = sum(dés())
+    return sum(roulade_dés[:3])
+
 
 
 class NPC:
